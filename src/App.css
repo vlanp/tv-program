@@ -1,0 +1,83 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.container {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+header img {
+  height: 10rem;
+}
+
+.program-adapter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.program-adapter .program {
+  width: 60%;
+  border-bottom: 1px solid gray;
+  display: flex;
+  gap: 2rem;
+  align-items: left;
+  padding-bottom: 2rem;
+}
+.program-adapter .program img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 2/3;
+  width: 4vw;
+}
+.program-adapter .program .hour {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.program-adapter .program .rigth-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.program-adapter .program .more-details {
+  display: flex;
+  gap: 1rem;
+}
+.program-adapter .program .more-details p {
+  font-weight: bold;
+}
+.program-adapter .program .more-details p:not(:first-child) {
+  color: red;
+}
+.program-adapter .program .more-details p:not(:first-child)::before {
+  content: "• ";
+}/*# sourceMappingURL=App.css.map */
